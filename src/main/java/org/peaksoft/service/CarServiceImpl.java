@@ -85,7 +85,7 @@ public class CarServiceImpl implements Service<Car> {
     }
 
     public void cleanTable() {
-        String query = "DELETE FROM cars;";
+        String query = "TRUNCATE TABLE cars;";
         Connection connection = Util.getConnection();
         try {
             Statement statement = connection.createStatement();

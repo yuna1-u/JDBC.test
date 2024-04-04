@@ -15,12 +15,14 @@ public class Main {
         UserServiceImpl userService = new UserServiceImpl();
         CarServiceImpl carService = new CarServiceImpl();
 
-        userService.createTable();
-        userService.save(new User("Rabi", "Buzurmanalieva", (byte) 17, (long) 123456));
-        userService.save(new User("Sami", "Uraimjanova", (byte) 16, (long) 654321));
+//        userService.createTable();
+//        userService.save(new User("Rabi", "Buzurmanalieva", (byte) 17, (long) 123456));
+//        userService.save(new User("Sami", "Uraimjanova", (byte) 16, (long) 654321));
+//
+//        carService.createTable();
+//        carService.save(new Car("Car", localDate, "white"));
+//        carService.save(new Car("car2", localDate, "black"));
 
-        carService.createTable();
-        carService.save(new Car("Car", localDate, "white"));
-        carService.save(new Car("car2", localDate, "black"));
+        userService.cleanTable();
     }
 }

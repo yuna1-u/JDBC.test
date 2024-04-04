@@ -86,7 +86,7 @@ public class UserServiceImpl implements Service<User> {
     }
 
     public void cleanTable() {
-        String query = "DELETE FROM users;";
+        String query = "TRUNCATE TABLE users;";
 
         try (Connection connection = Util.getConnection()) {
             Statement statement = connection.createStatement();
